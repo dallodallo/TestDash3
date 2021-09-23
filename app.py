@@ -69,12 +69,12 @@ auth = dash_auth.BasicAuth(
 # | Biscuits   | 53,153 | 12.431 |
 # """
 
-markdown_table = 
-"""|City|
-|:---|
-|    |
-|    |
-"""
+# markdown_table = 
+# """|City|
+# |:---|
+# |    |
+# |    |
+# """
 
 df['City'] = df['Tax'].apply(lambda x:
                              '⭐⭐⭐' if x > 30 else (
@@ -1811,4 +1811,4 @@ def update_graphs(rows, derived_virtual_selected_rows):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
